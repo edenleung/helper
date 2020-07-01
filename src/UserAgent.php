@@ -41,11 +41,13 @@ class UserAgent
         "Mozilla/5.0 (X11; U; Linux x86_64; zh-CN; rv:1.9.2.10) Gecko/20100922 Ubuntu/10.10 (maverick) Firefox/3.6.10"
     ];
 
-    public static function make() {
+    public static function make()
+    {
         return self::UA[mt_rand(0, count(self::UA) - 1)];
     }
 
-    public static function makeReptileHeader() {
+    public static function makeReptileHeader()
+    {
         $header = [
             'User-Agent'=> self::get(),
             'Accept'=> 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8',

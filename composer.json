@@ -1,0 +1,11 @@
+{
+    "name": "xiaodi/helper",
+    "description": "helper",
+    "license": "MIT",
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "\\xiaodi\\helper": "src"
+        }
+    }
+}
